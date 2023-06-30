@@ -1,0 +1,44 @@
+.element {
+    &-child {
+        text-align: center;
+    }
+}
+
+.modal{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    color: #af0e0e;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    box-shadow: 1px 3px 5px rgba(0,0,0, .1);
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s linear;
+    transform: translate(-50%, -50%) scale(0.8);
+    &.visible{
+        visibility: visible;
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+.modal-btn {
+    background-color: #af0e0e;
+    color: fff;
+    font-weight: 500;
+    border-radius: 20px;
+    margin: 50px auto;
+    display: block;
+    height: 50px;
+    width: 150px;
+    border: none;
+}
+
+.
